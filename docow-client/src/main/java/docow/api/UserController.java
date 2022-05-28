@@ -1,0 +1,22 @@
+package docow.api;
+
+
+import docow.annotation.LoginUser;
+import docow.struct.ido.ApiResultIDO;
+import docow.struct.ido.LoginUserIDO;
+import docow.struct.ido.fixed.UserToken;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+    @GetMapping("/get-user-info")
+    public ApiResultIDO<LoginUserIDO> getUserInfo(@LoginUser @ApiIgnore UserToken userToken,
+                                                  @RequestParam(value = "user_id", required = false) String userId){
+        return null;
+    }
+}
