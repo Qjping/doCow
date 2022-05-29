@@ -3,6 +3,7 @@ package docow.Handler.model;
 import com.alibaba.fastjson.JSONPath;
 import com.mysql.cj.util.StringUtils;
 import docow.converter.CaseConverter;
+import docow.jooq.tables.CaseConfig;
 import docow.repository.CaseDetailRepository;
 import docow.repository.CaseResultRepository;
 import docow.repository.UserDefineParamRepository;
@@ -10,14 +11,13 @@ import docow.struct.vo1.CaseDetailVO;
 import docow.struct.vo1.CaseQueryVO;
 import docow.struct.vo1.CaseResultVO;
 import docow.struct.vo1.UserDefineParamVO;
-import docow.jooq.tables.CaseConfig;
+import docow.util.BusinessException;
+import docow.util.JsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
 import org.json.JSONObject;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import docow.util.BusinessException;
-import docow.util.JsonUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public class CaseModel {
     }
 
     public CaseModel doHttpRequest(CaseDetailVO caseDetailVO) {
-        this.caseDetailVO = caseDetailVO;
+
         Request.Builder builder = new Request.Builder();
         Request request = null;
         String header = replaceParameters(caseDetailVO.getHeader());
