@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f7632395-d8ba-40f3-807e-4e3922d95b4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docow-client/src/main/java/docow/api/CaseDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/docow-client/src/main/java/docow/api/CaseDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/model/CaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/model/CaseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docow-core/src/main/java/docow/Handler/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
