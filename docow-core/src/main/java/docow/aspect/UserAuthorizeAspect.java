@@ -1,22 +1,10 @@
-package cow.infrastructures.aspect;
+package docow.aspect;
 
-import cow.infrastructures.constant.CookieConstant;
-import cow.infrastructures.constant.RedisConstant;
-import cow.infrastructures.exception.UserAuthorizeExption;
-import cow.infrastructures.util.CookiesUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 
 @Aspect
 @Component

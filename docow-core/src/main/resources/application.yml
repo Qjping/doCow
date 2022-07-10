@@ -6,6 +6,7 @@ spring:
         username: root
         password: 123456
 
+
     redis:
       host: 127.0.0.1
       port: 6379
@@ -51,3 +52,6 @@ logging:
   pattern:
     console: "%d - %msg%n"
     default-property-inclusion: non_null
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
